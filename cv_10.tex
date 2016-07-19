@@ -23,9 +23,26 @@
 
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 
+%------------
+\usepackage{enumitem}
+\renewenvironment{entrylist}{%
+  \begin{itemize}[leftmargin=1in]%[leftmargin=*,align=left,itemindent=-\dimexpr\labelwidth+\labelindent+\labelsep\relax]
+}{%
+  \end{itemize}
+}
+\renewcommand{\bfseries}{\headingfont\color{headercolor}}
+\renewcommand{\entry}[4]{%
+  \item[#1]
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    #4\vspace{\parsep}%
+  }
+%-------
+
 \begin{document}
 
-\header{Hamilton Daniel}{Cesário}{DevOps} % Your name and current job title/field
+\header{Hamilton Daniel}{Cesario}{SysOps Engineer} % Your name and current job title/field
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
@@ -47,8 +64,7 @@ Skype id: daniel.cesario
 Portuguese mother tongue
 English \& Spanish fluency
 \section{programming}
-{\color{red} $\varheartsuit$} Python, Puppet, Perl 
-Bash, Ruby, C, SQL 
+{\color{red} $\varheartsuit$} Perl, Bash, PowerShell, Python, Ruby. 
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -61,26 +77,34 @@ Bash, Ruby, C, SQL
 %------------------------------------------------
 \entry
 {2014--Now}
+{CAPSiDE}
+{Barcelona, Spain}
+{\emph{SysOps Engineer} 
+\begin{itemize}[label=\textbullet]
+\end{itemize}}
+%------------------------------------------------
+%------------------------------------------------
+
+\entry
+{2014--2014}
 {Opscaling}
 {Barcelona, Spain}
-{\emph{DevOps Engineer} \\
-\begin{itemize}
-\item \href{http://www.fcbarcelona.com/}{\textbf{FC Barcelona}} Cloud Infrastructure Management, Continuous Integration Implementation via git and Puppet, Automatic Scalability, Web Performance enhancements via CloudFront, S3, Varnish and Nginx.
+{\emph{SysOps Engineer} 
+\begin{itemize}[label=\textbullet]
+\item \href{http://www.fcbarcelona.com/}{\textbf{FC Barcelona}} Cloud Infrastructure Management, Continuous Integration Implementation via git and Puppet, Auto Scaling Enhancements, Web Performance enhancements via CloudFront, S3, Varnish and Nginx.
 \item \href{http://www.bdigital.org/}{\textbf{Barcelona Digital}} Big Data Technical consultancy and Automation on Elastic Map Reduce, Hive, GIS Tools for elastic Map Reduce and Spark.
-\item \href{http://www.tuitele.tv/}{\textbf{Tuitele}} Big Data Technical consultancy on Elastic Map Reduce, EC2 cluster scalability and automazatic cluster deployment.
+\item \href{http://www.tuitele.tv/}{\textbf{Tuitele}} Big Data Technical consultancy on Elastic Map Reduce, EC2 cluster scalability and automatization on cluster deployment.
 \item \href{http://www.lavanguardia.com/}{\textbf{La Vanguardia}} Cloud Infrastructure, Configuration and System Management, Platform monitorization and Web Performance Enhancements.
 \item \href{http://www.aedgency.com/}{\textbf{Aedgency Performance-Based Marketing}} Configuration, System Management, Platform monitorization on a highly automated and complex infrastructure.
 \item Cloud and System Automation Development for multiple purposes, mostly in Python.   
 \end{itemize}}
 %------------------------------------------------
-\pagebreak
-%------------------------------------------------
 \entry
 {2012--2014}
 {AppBridge Inc.}
 {Barcelona, Spain}
-{\emph{Solution Architect} \\
-\begin{itemize}
+{\emph{Solution Architect} 
+\begin{itemize}[label=\textbullet]
 \item \href{http://www.appbridge.com}{\textbf{AppBridge}} Project Design, Product Management, Cloud Architecture team leadership.
 \item Lead Perl core development team for the product \href{http://www.ebdsoft.com}{\textbf{eBD Web Application Development Platform}}, implementing scrum agile techniques, bringing the platform: new security modules, web rendering optimization system,Apache \& MySQL version update, new look \& feel and a new code editor.
 \item Private Cloud design and automation for the  \href{http://www.ebdcloud.com}{\textbf{eBDCloud}} PAAS Product (CloudStack, Xenserver, Puppet, CentOS).
@@ -94,8 +118,8 @@ Bash, Ruby, C, SQL
 {2010--2012}
 {UPC Universitat Politènica de Catalunya}
 {Barcelona, Spain}
-{\emph{DevOpS} \\
-\begin{itemize}
+{\emph{Junior SysOps} 
+\begin{itemize}[label=\textbullet]
 \item Perl Developer at the \href{https://github.com/smeagol-upc/smeagol-perl}{\textbf{Smeagol Project}}.
 \item LDAP UPCnet Integration.
 \item Samba Virtual File System Implementation.
@@ -111,8 +135,8 @@ Bash, Ruby, C, SQL
 {2008-2010}
 {CPET S.C.C.L}
 {Barcelona, Spain}
-{\emph{I.T Manager} \\
-\begin{itemize}
+{\emph{I.T Manager} 
+\begin{itemize}[label=\textbullet]
 \item Debian, LAMP, OpenVPN System Administration.
 \item Networking Administration for a distributed photocopier self service system at the \textbf{UPC Universitat Politènica de Catalunya}.
 \item Implementation of a distributed remote OS recovery system.
@@ -126,8 +150,8 @@ Bash, Ruby, C, SQL
 {2005-2007}
 {Netron ISP}
 {Blumenau, Brazil}
-{\emph{Junior System Administrator} \\
-\begin{itemize}
+{\emph{Junior System Administrator} 
+\begin{itemize}[label=\textbullet]
 \item FreeBSD LAMP system Administration.
 \item Networking Administration for RADIUS systems.
 \item System Script development for multiple purposes, mostly Bash.
@@ -154,7 +178,7 @@ Varnish,mod\_security, mod\_evasive, iptables, DNS, Zimbra, qmail,dhcpd, DNS, LD
 \end{itemize}
 {\large \textbf{Networking:}}
 \begin{itemize}
-\item Layer 7 Protocols: HTTP, HTTPS, FTP, SSH, SMTP/POP, Telnet, IRC, RTMP, RTMPT, BGP, RTP, RTSP, SAMBA, DNS, IMAP, LDAP, rsync, NTP \& SIP. 
+\item Layer 7 Protocols: HTTP, HTTPS, FTP, SSH, SMTP/POP, Telnet, IRC, RTMP, RTMPT, BGP, RTP, RTSP, SAMBA, DNS, IMAP, LDAP, NTP \& SIP. 
 \item Layer 4 Protocols: TCP, UDP, GRE, AH \& SCTP.
 \item Layer 3 Protocols: IPv4, IPv6, IPSec, IGMP, ARP,OSPF, RIP, ICMP, AH, SDH \& SCTP.
 \item Layer 2 Protocols: Ethernet, 802.11, PPP, PPTP, STP \& VTP.
