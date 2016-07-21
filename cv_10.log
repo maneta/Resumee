@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.27)  19 JUL 2016 21:18
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.27)  21 JUL 2016 19:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1254,33 +1254,22 @@ LaTeX Font Info:    Font shape `EU1/latinmodern-math.otf(2)/m/n' will be
 LaTeX Font Info:    Font shape `EU1/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 67.
 
+Overfull \hbox (7.34808pt too wide) in paragraph at lines 97--97
+[]\EU1/HelveticaNeueLight(0)/m/n/10 Cloud and System Automation Development for
+ multiple purposes, mostly
+ []
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.84 \end{itemize}}
-                   
-? 
-
-Overfull \hbox (1.89276pt too wide) in paragraph at lines 100--100
+Overfull \hbox (1.89276pt too wide) in paragraph at lines 113--113
 [][][]\EU1/HelveticaNeueCondensedBold(0)/m/n/10 Barcelona Digital[][] \EU1/Helv
 eticaNeueLight(0)/m/n/10 Big Data Technical consultancy and Automation on Elas-
 
  []
 
 
-Overfull \hbox (7.34808pt too wide) in paragraph at lines 100--100
+Overfull \hbox (7.34808pt too wide) in paragraph at lines 113--113
 []\EU1/HelveticaNeueLight(0)/m/n/10 Cloud and System Automation Development for
  multiple purposes, mostly
- []
-
-
-Overfull \hbox (5.74008pt too wide) in paragraph at lines 115--115
-[][][]\EU1/HelveticaNeueCondensedBold(0)/m/n/10 AppBridge[][] \EU1/HelveticaNeu
-eLight(0)/m/n/10 Project Design, Product Management, Cloud Architecture team
  []
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
@@ -1289,12 +1278,18 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 )
 [1
 
-] [2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
+]
+Overfull \hbox (5.74008pt too wide) in paragraph at lines 128--128
+[][][]\EU1/HelveticaNeueCondensedBold(0)/m/n/10 AppBridge[][] \EU1/HelveticaNeu
+eLight(0)/m/n/10 Project Design, Product Management, Cloud Architecture team
+ []
+
+[2] [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
  (./cv_10.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 225.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 225.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 241.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 241.
 Package logreq Info: Writing requests to 'cv_10.run.xml'.
 \openout1 = `cv_10.run.xml'.
 
