@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.2.5)  5 FEB 2018 17:22
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.2.5)  6 APR 2019 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1300,12 +1300,6 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 Overfull \hbox (29.75847pt too wide) in paragraph at lines 93--93
 []\TU/HelveticaNeueLight(0)/m/n/10 CI/CD Pipelines and automation with Jenkins 
 (Docker/Jenkins Files/Persistency
- []
-
-
-Overfull \hbox (1.1927pt too wide) in paragraph at lines 93--93
-[]\TU/HelveticaNeueLight(0)/m/n/10 Deployment Automation For Kubernetes and Ope
-nshift Clusters on AWS
  []
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
